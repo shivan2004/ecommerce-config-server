@@ -17,21 +17,21 @@ spring:
               filters:
                 - StripPrefix=2
                 - name: LoggingOrdersFilter
-                - name: Authentication
-                  args:
-                    enabled: true
-                - name: Authorization
-                  args:
-                    allowedRoles: ADMIN, SUPER_ADMIN
+     #           - name: Authentication
+      #            args:
+       #             enabled: true
+        #        - name: Authorization
+         #         args:
+          #          allowedRoles: ADMIN, SUPER_ADMIN
             - id: inventory-service
               uri: lb://INVENTORY-SERVICE
               predicates:
                 - Path=/api/v1/inventory/**
               filters:
                 - StripPrefix=2
-                - name: Authentication
-                  args:
-                    enabled: true
+   #             - name: Authentication
+    #              args:
+     #               enabled: true
 
 
 

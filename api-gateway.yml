@@ -1,4 +1,9 @@
+jwt:
+  secretKey: oaiusghdfq8uhtq8934r01837rty834yr234g897ry384yfgwyeurfgwi8o374rywf8o
 
+
+
+spring:
   #api gateway config
   cloud:
     gateway:
@@ -27,9 +32,6 @@
                 - name: Authentication
                   args:
                     enabled: true
-
-jwt:
-  secretKey: oaiusghdfq8uhtq8934r01837rty834yr234g897ry384yfgwyeurfgwi8o374rywf8o
 
 
 
